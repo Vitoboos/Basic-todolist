@@ -1,0 +1,109 @@
+body{
+    background-color: #845187;
+    margin: 10px;
+}
+
+header{
+    background-color: #3B3C36;
+    padding: 25px;
+}
+
+
+.container{
+    position: relative;
+}
+
+.container .taskLabel{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.container .taskName{
+    background-color: white;
+    position: absolute;
+    width: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container .addTask{
+    background-color: #845187;
+    color: white;
+    width: 10vw;
+    padding: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65vw;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.taskTitle{
+    position: relative;
+    bottom: 8vh;
+    left: 0;
+}
+
+.taskTitle h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.taskBox{
+    margin: 5vh 5vw;
+    padding: 10px;
+    background-color: #454CD1;
+
+    box-shadow: rgba(12, 12, 12, 0.5) 6px 6px;
+}
+
+.taskBox .mainTask{
+    display: grid;
+    grid-template-columns: 80% 1fr 1fr;
+    gap: 0.5vw;
+    padding: 5px;
+    margin: 2.5px;
+}
+
+.taskBox .mainTask .addSub{
+    display: block;
+    margin: auto;
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.taskBox .mainTask .remove{
+    display: block;
+    margin: auto;
+    width: 2vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.taskBox .subTask{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 15vw;
+    grid-column: span 3;
+}
+
+.taskBox .remove{
+    display: block;
+    margin: auto;
+    width: 2vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.taskBox .subTask .name{
+    width: 45vw;
+}
